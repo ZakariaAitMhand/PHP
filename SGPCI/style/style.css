@@ -1,0 +1,8 @@
+h1{
+	display:none;
+}
+#pagination{
+	background: url("image/button_bg.jpg");
+	color: black;
+	text-decoration: none;
+}

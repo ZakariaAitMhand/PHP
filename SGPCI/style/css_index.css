@@ -1,0 +1,272 @@
+*{
+	margin:0 auto;
+	padding:0;
+}
+.clear{
+	clear:both;
+	height:1px;
+}
+body{
+	width:1100px;
+}
+#baniere{
+	background:url(images/baniere.jpg) no-repeat;
+	height:131px;
+}
+.home{
+	width:90px;
+	height:25px;
+	float:left;
+	display:inline;
+	position:relative;
+	bottom:2em;
+}
+#home{
+	width:360px;
+	height:92px;
+	float:left;
+	display:inline;
+}
+#recherche{
+	float:right;
+	display:inline;
+}
+#recherche form{
+	margin-right:48px;
+}
+#recherche .ok{
+	background:url(images/ok.jpg);
+	width:42px;
+	height:42px;
+	border:0;
+	cursor:pointer;
+	overflow:hidden;
+	text-indent:10cm;
+}
+#recherche .txt{
+	border:2px solid #d6d6d6;
+	border-right:none;
+	height:26px;
+	position:relative;
+	bottom:1px;
+	left:4px;
+	color:#848b90;
+	font-style:italic;
+	width:300px;
+	
+}
+#logo img{
+	border:0;
+}
+#logo{
+	position:relative;
+	bottom:92px;
+	right: 8cm;
+	display:inline;	
+	width:360px;
+	height:92px;
+	border:0;
+}
+#menu{
+	float:left;
+	height:287px;
+	width:172px;
+	margin-top:-34px;
+	display:block;
+	margin-left:17px;
+}
+.baniere_b{
+	background-image:url("images/baniere_b.jpg");
+	float:right;
+	height:34px;
+	margin-right:-188px;
+	width:215px;
+	margin-right:-171px;
+}	
+.ban_b{
+	background-image:url("images/baniere_b2.jpg");
+	margin-right:-151px;
+	width:120px;
+}
+
+#menu .a1,#menu .a2,#menu .a3,#menu .a4,#menu .a5,#menu .a6,#menu .a7,#menu .a8,#menu .at1,#menu .at2,#menu .at3{
+	height:34px;
+	margin:0;
+	width:125px;
+	float:left;
+	margin-top:2px;
+}
+#menu a:hover, #menu .actif{
+	background-position:right top;
+	margin-left:2px;
+}
+body #menu .actif{
+	background-position:right top;
+	margin-left:2px;	
+}
+#menu .a1{
+	background:url(images/ajouter_projet.jpg);
+	margin-top:0;
+}
+#menu .a2{
+	background:url(images/Ajouter_client.jpg);
+	width:122px;
+}
+#menu .a3{
+	background:url(images/ajouter_responsable.jpg);
+	width:169px;
+}
+#menu .a4{
+	background:url(images/mon_equipe.jpg);
+	width:122px;
+}
+#menu .a5{
+	background:url(images/clients.jpg);
+	width:84px;
+}
+#menu .a6{
+	background:url(images/projet_historique.jpg);
+	width:160px;
+}
+#menu .a7{
+	background:url(images/mon_compte.jpg);
+	width:160px;
+}
+#menu .a8{
+	background:url(images/deconnecter.jpg);
+	width:115px;
+}
+#menu .at1{
+	background:url(images/at_historique.jpg);
+	width:160px;
+}
+#menu .at2{
+	background:url(images/at_compte.jpg);
+	width:160px;
+}
+#menu .at3{
+	background:url(images/at_deconnecter.jpg);
+	width:116px;
+}
+#menu .menu_footer{
+	background:url(images/menu_footer.jpg);
+	width:88px;
+	height:179px;
+	margin-left:0;
+	margin-top:110px;
+}
+#corp {
+	height:320px;
+	min-height:320px;
+	height:auto !important;
+	margin-right:0;
+	width:84%;
+}
+#corp input,#corp textarea,#corp select{
+	font-size:15px;
+	color:#666666;
+	font-weight:bold;
+	padding:2px;
+}
+#footer p{
+	color:#CC3300;
+	text-align:center;
+	font-size:12px;
+}
+
+/*ajout_projet*/
+.ajout_p{
+	width:600px;
+}
+.ajout_p tr,.ajout_p td,.ajout_p th{
+	padding-bottom:5px;
+}
+.ajout_p th{
+	text-align:left;
+}
+.ajout_p td table{
+	margin:0;
+}
+.ajout_p th span{
+	float:right;
+}
+.a_clt, #auth .bt,#corp .bt{
+	background-color:#D51701;
+	color:#FFF;
+	font-weight:bold;
+	margin-left:4em;
+	padding:2px;
+	text-decoration:none;
+	-moz-border-radius:5px 5px 5px 5px;
+	border:4px double;
+	-moz-box-shadow:0 0 7px #666666;
+}
+#corp .bt{
+	margin-left:1em;
+}
+.a_clt:hover, #auth .bt:hover, #corp .bt:hover{
+	background-color:#004465;
+}
+.pagination{
+	background-color:#D51701;
+	color:#FFF;
+	font-weight:bold;
+	padding:0 2px;
+	text-decoration:none;
+	border:4px double;
+	margin-right:2px;
+	
+}
+.pagination:hover{
+	background-color:#004465;
+}
+.pag{
+	text-align:center;
+}
+.clt td{
+	padding:0 6px;
+}
+#auth{
+	background:url(images/auth_cadre.jpg);
+	width:425px;
+	height:201px;
+	margin-top:-37px;
+}
+#auth .txt{
+	border:2px solid #BCBCBC;
+	display:block;
+	height:36px;
+	left:50px;
+	margin-top:7px;
+	position:relative;
+	top:108px;
+	width:249px;
+	border-left:0;
+	margin-right:50px;
+	color:#848b90 !important;
+	outline: none;
+}
+#auth .label{
+	border-color:#BCBCBC;
+	border-style:solid none solid solid;
+	border-width:2px 0 2px 2px;
+	bottom:7px;
+	color:#848B90;
+	display:block;
+	font-size:20px;
+	font-weight:bold;
+	height:27px;
+	margin-top:7px;
+	position:relative;
+	right:72px;
+	width:75px;
+	padding-top:5px;
+}
+#auth #lab2{
+	margin-right:177px;
+	width:125px;
+}
+#auth .bt{
+	position:relative;
+	top:7.5em;
+}
