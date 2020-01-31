@@ -1,0 +1,18 @@
+#board{height:180px;overflow:hidden;width:100%}
+#board_left{float:left;padding:5px 0 0}
+#board_items{padding:0;width:590px}
+#board_body{margin:0 0 0 5px;width:580px}
+#board_carusel{height:127px;margin:0 0 0 5px;position:relative;width:580px}
+#board_carusel .belt{left:0;position:absolute;top:0}
+.board_item{height:127px;margin-right:10px;overflow:hidden;width:570px}
+#board_body h2{color:#000;font-family:Georgia, "Times New Roman", Times, serif;font-size:18px;font-weight:400;margin:0 0 5px}
+#board_body strong{color:#000;display:block;font-size:12px;line-height:18px}
+#board_body p{color:#000;font-size:12px;line-height:18px;padding:0 0 5px}
+#board_body p img{border:1px solid #83b2c4;float:left;height:107px;margin:0 10px 0 0;width:161px}
+#board_body p a{color:#000}
+#board_body p.more a{text-decoration:underline}
+#board_body p.more a:hover{text-decoration:none}
+#board_carusel_nav{margin:5px 0 0 10px;overflow:hidden;width:90%}
+#board_carusel_nav li{background-image:none;background-repeat:no-repeat;float:left;font-family:Verdana, Geneva, sans-serif;font-size:12px;margin:0;padding:0}
+#board_carusel_nav a{background:#c2c2c2;border-right:1px solid #e7e7e7;color:#000;display:block;float:left;padding:5px 0;text-align:center;width:33px}
+#board_carusel_nav a.selected,#board_carusel_nav a:hover{background:#e7e7e7;border-right:1px solid #e7e7e7;font-weight:700;text-decoration:underline}

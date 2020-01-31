@@ -1,0 +1,57 @@
+.sub_menu {
+	display: none;
+    left: 5.4em;
+    position: absolute;
+    top: 22px;
+	width: 150px;
+	z-index:1;
+}
+#sub1{
+	left: 3.5em;
+    
+}
+#sub2{
+	left: 10.5em;
+    
+}
+#sub3{
+	left: 17.5em;
+}
+
+#sub4{
+	left: 24.8em;
+}
+#sub5{
+	left: 34em;
+}
+#sub6{
+	left: 42.5em;
+}
+
+#sub7{
+	left: 42em;
+	width:160px;
+}
+#ul .sub_menu #a{
+	background-image:none;
+	background-color: #7398A9;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    margin: 1px 0;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+#all #ul .sub_menu #a:hover{
+	background-color: white;
+	color: #7398A9;
+	text-decoration:none;
+	border-radius:0;
+	font-size:13px;
+	border-color: #7398A9;
+	text-shadow: 0 0 18px #7398A9;
+}
