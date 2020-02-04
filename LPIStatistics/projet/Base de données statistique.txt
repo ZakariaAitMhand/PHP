@@ -1,0 +1,171 @@
+-- phpMyAdmin SQL Dump
+-- version 2.9.2
+-- http://www.phpmyadmin.net
+-- 
+-- Serveur: localhost
+-- Généré le : Mercredi 28 Avril 2010 à 17:27
+-- Version du serveur: 5.0.27
+-- Version de PHP: 5.2.1
+-- 
+-- Base de données: `statistique`
+-- 
+CREATE DATABASE `statistique` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `statistique`;
+
+-- --------------------------------------------------------
+
+-- 
+-- Structure de la table `cherche`
+-- 
+
+CREATE TABLE `cherche` (
+  `cin` varchar(25) NOT NULL,
+  `master_obtenu` varchar(10) NOT NULL,
+  PRIMARY KEY  (`cin`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- 
+-- Contenu de la table `cherche`
+-- 
+
+INSERT INTO `cherche` (`cin`, `master_obtenu`) VALUES 
+('14', 'oui'),
+('15', 'oui');
+
+-- --------------------------------------------------------
+
+-- 
+-- Structure de la table `employee`
+-- 
+
+CREATE TABLE `employee` (
+  `cin` varchar(30) NOT NULL,
+  `nom_societe` varchar(40) NOT NULL,
+  `specialite` varchar(40) NOT NULL,
+  `ville` varchar(25) NOT NULL,
+  `salaire` int(25) NOT NULL,
+  PRIMARY KEY  (`cin`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- 
+-- Contenu de la table `employee`
+-- 
+
+INSERT INTO `employee` (`cin`, `nom_societe`, `specialite`, `ville`, `salaire`) VALUES 
+('6', 'Oracle', 'BD', 'casablanca', 10000),
+('7', 'Oracle', 'BD', 'casablanca', 10000),
+('8', 'Oracle', 'BD', 'casablanca', 10000),
+('9', 'Oracle', 'BD', 'casablanca', 10000),
+('10', 'Oracle', 'BD', 'casablanca', 10000),
+('12', 'Oracle', 'BD', 'casablanca', 10000),
+('13', 'Oracle', 'BD', 'casablanca', 10000),
+('17', 'alpha', 'GL', 'meknes', 40000),
+('18', 'alpha', 'GL', 'meknes', 10000),
+('19', 'alpha', 'GL', 'meknes', 40000),
+('20', 'alpha', 'GL', 'meknes', 10000),
+('21', 'alpha', 'GL', 'meknes', 40000),
+('22', 'alpha', 'GL', 'meknes', 10000),
+('23', 'alpha', 'GL', 'meknes', 40000),
+('24', 'alpha', 'GL', 'meknes', 10000),
+('25', 'alpha', 'GL', 'meknes', 40000),
+('26', 'alpha', 'GL', 'meknes', 10000);
+
+-- --------------------------------------------------------
+
+-- 
+-- Structure de la table `etude`
+-- 
+
+CREATE TABLE `etude` (
+  `cin` varchar(30) NOT NULL,
+  `type_etude` varchar(30) NOT NULL,
+  `specialite` varchar(30) NOT NULL,
+  `nom_ecole` varchar(25) NOT NULL,
+  `ville` varchar(25) NOT NULL,
+  PRIMARY KEY  (`cin`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- 
+-- Contenu de la table `etude`
+-- 
+
+INSERT INTO `etude` (`cin`, `type_etude`, `specialite`, `nom_ecole`, `ville`) VALUES 
+('1', 'master', 'GL', 'Al Akhawayne', 'ifrane'),
+('2', 'master', 'GL', 'Al Akhawayne', 'ifrane'),
+('4', 'master', 'GL', 'Al Akhawayne', 'ifrane'),
+('5', 'master', 'GL', 'Al Akhawayne', 'ifrane'),
+('6', 'master', 'GL', 'Al Akhawayne', 'ifrane'),
+('26', 'master', 'GL', 'Al Akhawayne', 'ifrane'),
+('27', 'master', 'GL', 'al akhawayne', 'ifrane'),
+('28', 'master', 'GL', 'Al Akhawayne', 'ifrane'),
+('29', 'master', 'GL', 'al akhawayne', 'ifrane'),
+('30', 'master', 'GL', 'Al Akhawayne', 'ifrane'),
+('31', 'master', 'GL', 'al akhawayne', 'ifrane'),
+('33', 'master', 'GL', 'Al Akhawayne', 'ifrane'),
+('34', 'master', 'GL', 'al akhawayne', 'ifrane'),
+('35', 'master', 'GL', 'Al Akhawayne', 'ifrane'),
+('36', 'master', 'GL', 'al akhawayne', 'ifrane'),
+('37', 'master', 'GL', 'Al Akhawayne', 'ifrane'),
+('38', 'master', 'GL', 'al akhawayne', 'ifrane'),
+('32', 'master', 'GL', 'Al Akhawayne', 'ifrane'),
+('123456', 'Master', 'info', 'fsm', 'Meknes');
+
+-- --------------------------------------------------------
+
+-- 
+-- Structure de la table `laureat`
+-- 
+
+CREATE TABLE `laureat` (
+  `cin` varchar(20) NOT NULL,
+  `nom` varchar(40) NOT NULL,
+  `prenom` varchar(25) NOT NULL,
+  `gsm` varchar(20) NOT NULL,
+  `promo` varchar(25) NOT NULL,
+  `mdp` varchar(20) NOT NULL,
+  `statut` varchar(20) NOT NULL,
+  PRIMARY KEY  (`cin`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- 
+-- Contenu de la table `laureat`
+-- 
+
+INSERT INTO `laureat` (`cin`, `nom`, `prenom`, `gsm`, `promo`, `mdp`, `statut`) VALUES 
+('1', 'abdelali', 'iferden', '0671268852', '2009/2010', 'meknes', 'etude'),
+('2', 'zakaria', 'ait mhand', '0673425432', '2009/2010', 'meknes', 'etude'),
+('4', 'haitam', 'rifi', '0673425432', '2009/2010', 'meknes', 'etude'),
+('5', 'wail', 'elbettani', '0671268852', '2009/2010', 'meknes', 'etude'),
+('6', 'saoud', 'mohamed', '0673425432', '2009/2010', 'meknes', 'travail'),
+('7', 'azzeddine', 'hilali', '0673425432', '2009/2010', 'meknes', 'travail'),
+('8', 'atmane', 'mezyan', '0673425432', '2009/2010', 'meknes', 'travail'),
+('9', 'simi', 'bouljawi', '0673425432', '2009/2010', 'meknes', 'travail'),
+('10', 'maroin', 'chaouiki', '0673425432', '2008/2009', 'meknes', 'travail'),
+('12', 'hicham', 'aamom', '0673425432', '2006/2007', 'meknes', 'travail'),
+('13', 'samir', 'aalam', '0673425432', '2006/2007', 'meknes', 'etude'),
+('14', 'mourad', 'haytomo', '0673425432', '2006/2007', 'meknes', 'recherche'),
+('15', 'flan', 'benflane', '0673425432', '2006/2007', 'meknes', 'recherche'),
+('17', 'redouan', 'iferden', '0673425432', '2006/2007', 'meknes', 'travail'),
+('18', 'hamid', 'khalifi', '0671268852', '2009/2010', 'meknes', 'travail'),
+('19', 'oussama', 'haml', '0673425432', '2009/2010', 'meknes', 'travail'),
+('20', 'oujlakh', 'rajae', '0671268852', '2009/2010', 'meknes', 'travail'),
+('21', 'hoda', 'makdoun', '0673425432', '2009/2010', 'meknes', 'travail'),
+('22', 'khaoula', 'elaatmani', '0671268852', '2009/2010', 'meknes', 'travail'),
+('23', 'salma', 'tazi', '0673425432', '2009/2010', 'meknes', 'travail'),
+('24', 'badre', 'chaib', '0671268852', '2009/2010', 'meknes', 'travail'),
+('25', 'john', 'john', '0673425432', '2009/2010', 'meknes', 'travail'),
+('26', 'machin', 'machin', '0671268852', '2009/2010', 'meknes', 'etude'),
+('27', 'malin', 'malin', '0673425432', '2009/2010', 'meknes', 'etude'),
+('29', 'machin', 'machin', '0671268852', '2009/2010', 'meknes', 'etude'),
+('30', 'malin', 'malin', '0673425432', '2009/2010', 'meknes', 'etude'),
+('31', 'machin', 'machin', '0671268852', '2009/2010', 'meknes', 'etude'),
+('32', 'malin', 'malin', '0673425432', '2009/2010', 'meknes', 'etude'),
+('33', 'machin', 'machin', '0671268852', '2009/2010', 'meknes', 'etude'),
+('34', 'malin', 'malin', '0673425432', '2009/2010', 'meknes', 'etude'),
+('35', 'machin', 'machin', '0671268852', '2009/2010', 'meknes', 'etude'),
+('36', 'malin', 'malin', '0673425432', '2009/2010', 'meknes', 'etude'),
+('37', 'machin', 'machin', '0671268852', '2009/2010', 'meknes', 'etude'),
+('38', 'malin', 'malin', '0673425432', '2009/2010', 'meknes', 'etude'),
+('39', 'machin', 'machin', '0671268852', '2009/2010', 'meknes', 'etude'),
+('40', 'malin', 'malin', '0673425432', '2009/2010', 'meknes', 'etude'),
+('123456', 'ziko', 'Ziko', '066557744', '2009/2010', 'meknes1', 'etude');
